@@ -71,6 +71,12 @@ fun LightSensorCard(modifier: Modifier = Modifier) {
     LightSensorCardContent(value = lightSensorValue, modifier = modifier)
 }
 
+@Preview
+@Composable
+fun LightSensorCardPreview() {
+    LightSensorCardContent(value = 1F, modifier = Modifier.width(240.dp))
+}
+
 @Composable
 fun LightSensorCardContent(value: Float?, modifier: Modifier = Modifier) {
     BasicAppCard(
